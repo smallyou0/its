@@ -5106,7 +5106,9 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #9799A5;
   font-size: 12px;
   font-weight: 600;
-  /* text-decoration: underline; */
+  white-space: wrap;
+  min-width: 53px;
+  margin-left: 5px;
   &.gray {
     color: var(--grayc7);
   }
