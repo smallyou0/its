@@ -99,8 +99,7 @@
                 <div class="text-type4 fz14 pt15">&#9312; 견적받기 신청</div>
                 <div class="text-type4 fz13 pt10 pb16 fw400 border-bottom gray2">간단한 바이크 정보를 입력하여 견적받기를 신청합니다.</div>
                 <div class="text-type4 fz14 pt15">&#9313; 견적받기</div>
-                <div class="text-type4 fz13 pt10 pb16 fw400 border-bottom gray2">[일반 거래] 구매자와 소통하며 거래를 진행합니다.<br>
-                  [안심 거래] 모두싸인을 통해 계약서 작성 후 거래를 진행합니다.</div>
+                <div class="text-type4 fz13 pt10 pb16 fw400 border-bottom gray2">신청 후 7일간 내 바이크에 대한 견적을 확인해볼 수 있습니다.</div>
                 <div class="text-type4 fz14 pt15">&#9313; 판매 완료</div>
                 <div class="text-type4 fz13 pt10 pb16 fw400 ">마음에 드는 견적가가 도착하면 구매희망자와 연락하여 거래를 진행합니다.</div>
               </div>
@@ -113,7 +112,7 @@
 
 
           <div class="px16 mt34">
-            <button class="btn-main-on w100" type="button" onclick="alert('준비중입니다')">거래 시작하기</button>
+            <button class="btn-main-on btn-start w100" type="button" onclick="alert('준비중입니다')">거래 시작하기</button>
           </div>
       </section>
       <div class="nav-foot">
@@ -137,13 +136,18 @@
         $('#list2').hide();
         $('#btn1').addClass('active')
         $('#btn2').removeClass('active')
+        $('.btn-start').addClass('active');
       })
       $('#btn2').click(function() {
         $('#list2').show();
         $('#list1').hide();
         $('#btn1').removeClass('active')
         $('#btn2').addClass('active')
+        $('.btn-start').addClass('active');
       })
+      // $('.btn-start').click(function() {
+      //   alert('dd')
+      // })
     </script>
   </body>
   <script src="js/button.js"></script>

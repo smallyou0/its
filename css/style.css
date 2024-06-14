@@ -5231,7 +5231,7 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #fff;
   font-size: 13px;
   font-weight: 400;
-  color: #00AAD2;
+  color: #fff;
 }
 .menu-hamburger {
   /* display: none; */
@@ -5439,4 +5439,10 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 .its-list {
   display: none;
+}
+.btn-start {
+  background: rgba(0, 0, 0, 0.25);
+  &.active {
+    background: #00AAD2;
+  }
 }
